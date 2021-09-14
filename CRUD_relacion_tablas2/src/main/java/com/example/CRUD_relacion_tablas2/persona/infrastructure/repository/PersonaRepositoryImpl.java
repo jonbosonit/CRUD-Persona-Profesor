@@ -42,12 +42,7 @@ public class PersonaRepositoryImpl {
             switch (field)
             {
                 case "user":
-                    predicates.add(cb.like(root.get(field), "%" + (String)value + "%"));
-                    break;
-
                 case "city":
-                    predicates.add(cb.like(root.get(field), "%" + (String)value + "%"));
-                    break;
                 case "surname":
                     predicates.add(cb.like(root.get(field), "%" + (String)value + "%"));
                     break;
